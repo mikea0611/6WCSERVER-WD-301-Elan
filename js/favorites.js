@@ -1,0 +1,9 @@
+(() => {
+ const grid=document.getElementById('favoritesGrid'),status=document.getElementById('favoritesStatus');
+ const read=()=>{try{const a=JSON.parse(localStorage.getItem('elanFavorites'));return Array.isArray(a)?a:[]}catch{return []}};
+ let products=[];
+ function render(){const list=read();grid.replaceChildren();status.textContent=list.length?`${list.length} saved ${list.length===1?'dress':'dresses'}`:'You haven’t saved any dresses yet. Tap the heart on a dress to add it here.';
+  list.forEach(saved=>{const item=products.find(p=>p.name===saved.name)||saved;const card=document.createElement('article');card.className='favorite-item';const a=document.createElement('a');a.href='product.html?name='+encodeURIComponent(item.name);if(item.image){const img=document.createElement('img');img.src=item.image;img.alt=item.name;img.loading='lazy';a.appendChild(img)}const h=document.createElement('h2');h.textContent=item.name;a.appendChild(h);card.appendChild(a);const price=document.createElement('p');price.textContent='₱'+Number(item.price||0).toLocaleString('en-PH')+' rental';card.appendChild(price);const remove=document.createElement('button');remove.type='button';remove.className='favorite-remove';remove.textContent='Remove from favorites';remove.addEventListener('click',()=>{localStorage.setItem('elanFavorites',JSON.stringify(read().filter(x=>x.name!==item.name)));render()});card.appendChild(remove);grid.appendChild(card)})
+ }
+ fetch('/api/products',{method:'GET'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(data=>{products=data;render()}).catch(()=>{render();status.textContent+=' Product photos unavailable; run using Live Server.'});
+})();

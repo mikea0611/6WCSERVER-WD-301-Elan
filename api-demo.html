@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Integration Demonstration | ÉLAN
+</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.api-shell {
+    max-width:1100px;
+    margin:0 auto;
+    padding:65px 28px 95px;
+    color:#40291f}
+.api-shell h1 {
+    font-size:clamp(2.2rem,5vw,3.7rem);
+    font-weight:400;
+    margin:0 0 12px}
+.api-intro {
+    line-height:1.7;
+    color:#795b4c;
+    max-width:760px;
+    margin-bottom:35px}
+.api-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px}
+.api-panel {
+    background:#f6f0eb;
+    padding:30px;
+    min-width:0}
+.api-panel h2 {
+    font-size:1.7rem;
+    font-weight:400;
+    margin:0 0 8px}
+.api-note {
+    color:#795b4c;
+    font-size:.92rem;
+    line-height:1.6}
+.api-status {
+    font-size:.88rem;
+    margin:18px 0}
+.api-record {
+    padding:18px 0;
+    border-top:1px solid #ded2c9;
+    line-height:1.6;
+    overflow-wrap:anywhere}
+.api-record h3 {
+    font-size:1.05rem;
+    font-weight:600;
+    margin:0 0 5px}
+.api-record p {
+    margin:3px 0}
+.api-record img {
+    width:62px;
+    height:76px;
+    object-fit:cover;
+    float:right;
+    margin-left:12px}
+.api-error {
+    color:#a12b24}
+@media(max-width:720px) {
+    .api-grid {
+    grid-template-columns:1fr}
+.api-shell {
+    padding:38px 18px}
+.api-panel {
+    padding:22px}
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">ÉLAN</a>
+<nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="dresses.html">Dresses</a>
+      <a href="membership.html">Membership</a>
+      <a href="how.html">How It Works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+</nav>
+<div class="icons">
+    <a id="heartIcon" class="header-icon" href="favorites.html" aria-label="View favorites" title="Favorites"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></svg></a>
+    <a id="bagIcon" class="header-icon" href="cart.html" aria-label="View rental bag" title="Rental Bag"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1.2 12H5.2L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></a>
+</div>
+</header>
+<main class="api-shell"><a href="index.html" style="color:inherit">← Back to Home</a>
+<h1>Data Integration Demonstration
+</h1>
+<p class="api-intro">This page demonstrates the project's two required datasets. Both are retrieved and displayed using JavaScript HTTP GET requests to local JSON files. Customer records below are fictional demonstration data, not information submitted through checkout.
+</p>
+<div class="api-grid">
+<section class="api-panel" aria-labelledby="productsHeading">
+<h2 id="productsHeading">Dataset 1 · Products
+</h2>
+<p class="api-note">Source: <code>/api/products (MongoDB)</code> · HTTP GET
+</p>
+<p id="productsStatus" class="api-status" role="status">Loading product data…
+</p>
+<div id="productsResults">
+</div>
+</section>
+<section class="api-panel" aria-labelledby="customersHeading">
+<h2 id="customersHeading">Dataset 2 · Customer Information
+</h2>
+<p class="api-note">Source: <code>/api/customers (MongoDB)</code> · HTTP GET · Sample records only
+</p>
+<p id="customersStatus" class="api-status" role="status">Loading customer data…
+</p>
+<div id="customersResults">
+</div>
+</section>
+</div>
+</main>
+<script src="js/api-demo.js">
+</script>
+</body>
+</html>

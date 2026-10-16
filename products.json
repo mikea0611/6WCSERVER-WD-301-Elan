@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Seraphina Gown",
+    "price": 500,
+    "image": "assets/dress1.jpg",
+    "description": "Seraphina Gown is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Evening Gown",
+    "availability": "Available for Rental"
+  },
+  {
+    "id": 2,
+    "name": "Celine Dress",
+    "price": 700,
+    "image": "assets/dress2.jpg",
+    "description": "Celine Dress is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Cocktail Dress",
+    "availability": "Currently Rented"
+  },
+  {
+    "id": 3,
+    "name": "Aurora Gown",
+    "price": 500,
+    "image": "assets/dress3.jpg",
+    "description": "Aurora Gown is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Evening Gown",
+    "availability": "Available for Rental"
+  },
+  {
+    "id": 4,
+    "name": "Isla Dress",
+    "price": 800,
+    "image": "assets/dress4.jpg",
+    "description": "Isla Dress is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Occasion Dress",
+    "availability": "Available for Rental"
+  },
+  {
+    "id": 5,
+    "name": "Luna Gown",
+    "price": 900,
+    "image": "assets/dress5.jpg",
+    "description": "Luna Gown is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Evening Gown",
+    "availability": "Available for Rental"
+  },
+  {
+    "id": 6,
+    "name": "Valentina Dress",
+    "price": 600,
+    "image": "assets/dress6.jpg",
+    "description": "Valentina Dress is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Occasion Dress",
+    "availability": "Currently Rented"
+  },
+  {
+    "id": 7,
+    "name": "Noir Dress",
+    "price": 400,
+    "image": "assets/dress7.jpg",
+    "description": "Noir Dress is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Cocktail Dress",
+    "availability": "Available for Rental"
+  },
+  {
+    "id": 8,
+    "name": "Elle Gown",
+    "price": 700,
+    "image": "assets/dress8.jpg",
+    "description": "Elle Gown is an elegant rental piece for special occasions. Enjoy a polished look without buying a dress you may only wear once.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "rentalDays": 4,
+    "category": "Evening Gown",
+    "availability": "Available for Rental"
+  }
+]

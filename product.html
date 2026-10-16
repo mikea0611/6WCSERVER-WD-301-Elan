@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dress Details | Élan
+</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">ÉLAN</a>
+<nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="dresses.html">Dresses</a>
+      <a href="membership.html">Membership</a>
+      <a href="how.html">How It Works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+</nav>
+<div class="icons">
+    <a id="heartIcon" class="header-icon" href="favorites.html" aria-label="View favorites" title="Favorites"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></svg></a>
+    <a id="bagIcon" class="header-icon" href="cart.html" aria-label="View rental bag" title="Rental Bag"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1.2 12H5.2L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></a>
+</div>
+</header>
+<main class="product-shell">
+    <a class="back-link" href="dresses.html">← Back to Dresses</a>
+<p id="loadingMessage" role="status">Loading dress information...
+</p>
+<section id="productDetails" class="product-layout" hidden>
+      <img id="productImage" class="product-photo" alt="">
+<div class="product-copy">
+<p class="eyebrow">THE ÉLAN COLLECTION
+</p>
+<h1 id="productName">
+</h1>
+<p id="productPrice" class="product-price">
+</p>
+<div class="product-rule">
+</div>
+<p id="productCategory" class="elan-product-category">
+</p>
+<p id="productDescription" class="product-description">
+</p>
+<p id="productAvailability" class="elan-product-availability">
+</p>
+<p class="elan-availability-note">Dates and sizes are subject to rental confirmation.
+</p>
+<label for="dressSize">Select your size
+</label>
+        <select id="dressSize" required></select>
+<p class="small-note">Rental duration: 4 days
+</p>
+<button id="addToBag" class="bag-button" type="button">Add to Rental Bag
+</button>
+<p id="bagMessage" class="bag-message" role="status">
+</p>
+        <a class="back-link" href="cart.html">View Rental Bag →</a>
+</div>
+</section>
+</main>
+<script src="js/product.js">
+</script>
+<script src="js/catalog.js">
+</script>
+</body>
+</html>

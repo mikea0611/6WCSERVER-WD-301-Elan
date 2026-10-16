@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rental Bag | Élan
+</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">ÉLAN</a>
+<nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="dresses.html">Dresses</a>
+      <a href="membership.html">Membership</a>
+      <a href="how.html">How It Works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+</nav>
+<div class="icons">
+    <a id="heartIcon" class="header-icon" href="favorites.html" aria-label="View favorites" title="Favorites"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></svg></a>
+    <a id="bagIcon" class="header-icon" href="cart.html" aria-label="View rental bag" title="Rental Bag"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1.2 12H5.2L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></a>
+</div>
+</header>
+<main class="cart-shell">
+        <a class="cart-back" href="dresses.html">← Continue Shopping</a>
+<h1>Your Rental Bag
+</h1>
+<p class="cart-intro">Your selected pieces, ready for your next moment.
+</p>
+<p id="cartStatus" role="status">Loading your rental bag...
+</p>
+<div class="cart-layout">
+<section id="cartItems" aria-label="Selected dresses">
+</section>
+<aside id="cartSummary" class="cart-summary" hidden>
+<h2>Order Summary
+</h2>
+<div class="cart-total-line"><span>Subtotal</span><span id="subtotal"></span>
+</div>
+<div class="cart-total-line" id="discountLine" hidden><span>First rental discount (15%)</span><span id="discount"></span>
+</div>
+<div class="cart-total-line cart-grand"><strong>Total</strong><strong id="total"></strong>
+</div>
+<p class="cart-hint">Rental prices are for 4 days. Rental dates and customer information will be collected at checkout.
+</p>
+<button class="cart-checkout" id="checkoutButton" type="button">Proceed to Checkout →
+</button>
+<p class="cart-notice" id="checkoutNotice" role="status">
+</p>
+</aside>
+</div>
+</main>
+<script src="js/cart.js">
+</script>
+</body>
+</html>

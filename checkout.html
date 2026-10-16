@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout | Élan
+</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">ÉLAN</a>
+<nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="dresses.html">Dresses</a>
+      <a href="membership.html">Membership</a>
+      <a href="how.html">How It Works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+</nav>
+<div class="icons">
+    <a id="heartIcon" class="header-icon" href="favorites.html" aria-label="View favorites" title="Favorites"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></svg></a>
+    <a id="bagIcon" class="header-icon" href="cart.html" aria-label="View rental bag" title="Rental Bag"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1.2 12H5.2L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></a>
+</div>
+</header>
+<main class="checkout-shell"><a href="cart.html" class="checkout-back">← Back to Rental Bag</a>
+<h1>Complete Your Rental
+</h1>
+<p class="checkout-sub">A few details before your special moment.
+</p>
+<div class="checkout-grid">
+<form id="checkoutForm" class="checkout-panel" novalidate>
+<h2>Customer Information
+</h2>
+<div class="checkout-fields">
+<label>Full Name <input name="name" autocomplete="name" required maxlength="100">
+</label>
+<label>Email Address <input name="email" type="email" autocomplete="email" required maxlength="150">
+</label>
+<label>Mobile Number <input name="phone" type="tel" autocomplete="tel" required inputmode="numeric" placeholder="09XXXXXXXXX" minlength="11" maxlength="11" pattern="09[0-9]{9}" title="Enter an 11-digit Philippine mobile number starting with 09">
+</label>
+<label>House / Unit No., Street, Subdivision <input name="street" autocomplete="address-line1" required maxlength="150" placeholder="e.g. 123 Mabini St., Poblacion">
+</label>
+<label>Barangay <input name="barangay" required maxlength="100" placeholder="e.g. Poblacion">
+</label>
+<label>City / Municipality <input name="city" autocomplete="address-level2" required maxlength="100" placeholder="e.g. Malolos">
+</label>
+<label>Province <input name="province" autocomplete="address-level1" required maxlength="100" placeholder="e.g. Bulacan">
+</label>
+<label>ZIP Code <input name="postalCode" inputmode="numeric" autocomplete="postal-code" required pattern="[0-9]{4}" maxlength="4" placeholder="e.g. 3000" title="Enter a 4-digit Philippine ZIP code">
+</label>
+<label>Rental Start Date <input name="startDate" id="startDate" type="date" required>
+</label>
+<label>Return Date <input name="returnDate" id="returnDate" type="date" required>
+</label>
+</div>
+<h2>Payment Method
+</h2>
+<p class="checkout-small">Select your preferred payment method. No payment is collected through this form.
+</p>
+<label class="checkout-radio"><input type="radio" name="payment" value="Cash on Pickup" required> Cash on Pickup
+</label>
+<label class="checkout-radio"><input type="radio" name="payment" value="GCash" required> GCash
+</label>
+<label class="checkout-radio"><input type="radio" name="payment" value="Bank Transfer" required> Bank Transfer
+</label>
+<button class="checkout-submit" type="submit">Place Rental Request →
+</button>
+<p id="formError" role="alert" class="checkout-error">
+</p>
+</form>
+<aside class="checkout-panel">
+<h2>Your Rental Summary
+</h2>
+<div id="checkoutItems">
+</div>
+<div class="checkout-line"><span>Subtotal</span><span id="checkoutSubtotal"></span>
+</div>
+<div class="checkout-line" id="checkoutDiscountRow" hidden><span>15% Discount</span><span id="checkoutDiscount"></span>
+</div>
+<div class="checkout-line checkout-total"><strong>Total</strong><strong id="checkoutTotal"></strong>
+</div>
+<p class="checkout-small">Rental period: 1–4 calendar days. The listed rental price applies to any selected duration (no daily proration).
+</p>
+</aside>
+</div>
+<section id="confirmation" class="checkout-confirm" hidden tabindex="-1">
+<div class="confirmation-eyebrow">ÉLAN · YOUR RENTAL
+</div>
+<div class="checkout-check" aria-hidden="true">✓
+</div>
+<div class="confirmation-kicker">REQUEST CONFIRMED
+</div>
+<h2>Rental Request Received!
+</h2>
+<p>Thank you for choosing Élan. Your rental request has been saved on this device. It has not been submitted to our team; please contact us to confirm availability and arrange your rental.
+</p>
+<div class="confirmation-receipt">
+<div class="receipt-label">YOUR REFERENCE NUMBER
+</div>
+<div id="reference" class="receipt-reference">
+</div>
+<div class="receipt-divider">
+</div>
+<p id="confirmationDetails">
+</p>
+</div>
+<p class="confirmation-note">Keep your reference number for your records.
+</p><a href="dresses.html" class="checkout-finish">Continue Browsing</a>
+</section>
+</main>
+<script src="js/checkout.js">
+</script>
+</body>
+</html>

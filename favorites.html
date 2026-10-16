@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Favorites | Élan
+</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">ÉLAN</a>
+<nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="dresses.html">Dresses</a>
+      <a href="membership.html">Membership</a>
+      <a href="how.html">How It Works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+</nav>
+<div class="icons">
+    <a id="heartIcon" class="header-icon" href="favorites.html" aria-label="View favorites" title="Favorites"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></svg></a>
+    <a id="bagIcon" class="header-icon" href="cart.html" aria-label="View rental bag" title="Rental Bag"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1.2 12H5.2L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></a>
+</div>
+</header>
+<main class="favorites-shell">
+<p class="favorites-eyebrow">YOUR CURATED COLLECTION
+</p>
+<h1>My Favorites
+</h1>
+<p class="favorites-intro">All the dresses you love, in one place.
+</p>
+<div id="favoritesApp"><p id="favoritesStatus" role="status">{{ loading ? "Loading favorites…" : (favorites.length ? favorites.length + " saved " + (favorites.length === 1 ? "dress" : "dresses") : "You haven’t saved any dresses yet. Tap the heart on a dress to add it here.") }}
+</p>
+<div id="favoritesGrid" class="favorites-grid"><article v-for="item in favorites" :key="item.name" class="favorite-item"><a :href="'product.html?name='+encodeURIComponent(item.name)"><img v-if="detail(item).image" :src="detail(item).image" :alt="item.name" loading="lazy"><h2>{{ item.name }}</h2></a><p>{{ money(detail(item).price) }} rental</p><button type="button" class="favorite-remove" @click="remove(item.name)">Remove from favorites</button></article>
+</div><p v-if="error" role="status">{{ error }}</p></div><a class="favorites-browse" href="dresses.html">Explore All Dresses →</a>
+</main>
+<script src="/vendor/vue/vue.global.prod.js"></script><script src="js/favorites-vue.js">
+</script>
+</body>
+</html>

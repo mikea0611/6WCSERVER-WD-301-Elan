@@ -1,0 +1,21 @@
+.checkout-shell{max-width:1120px;margin:45px auto 100px;padding:0 25px;color:#3e2821;min-height:65vh}.checkout-back{text-decoration:underline;text-underline-offset:4px;font-size:14px}.checkout-shell h1{font-size:clamp(34px,4vw,52px);font-weight:normal;margin:32px 0 10px}.checkout-sub{color:#806c5e;margin-bottom:35px}.checkout-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:45px;align-items:start}.checkout-panel{background:#f5f0eb;padding:30px}.checkout-panel h2{font-size:24px;font-weight:normal;margin:0 0 22px}.checkout-panel h2:not(:first-child){margin-top:35px}.checkout-fields{display:grid;gap:17px}.checkout-fields label{display:grid;gap:7px;font-size:13px}.checkout-fields input,.checkout-fields textarea{width:100%;padding:13px;border:1px solid #d3c6bc;background:#fff;font:inherit;color:#3e2821;box-sizing:border-box}.checkout-radio{display:flex;align-items:center;gap:10px;margin:15px 0;font-size:14px}.checkout-small{font-size:12px;line-height:1.7;color:#806c5e}.checkout-submit,.checkout-finish{display:inline-block;width:100%;background:#3e2821;color:#fff;border:0;padding:17px 12px;text-align:center;cursor:pointer;letter-spacing:.5px;box-sizing:border-box;margin-top:20px;text-decoration:none}.checkout-submit:hover,.checkout-finish:hover{background:#654638}.checkout-line{display:flex;justify-content:space-between;gap:15px;margin:16px 0;font-size:14px}.checkout-total{border-top:1px solid #cbbcaf;padding-top:20px;font-size:18px}.checkout-item{padding:12px 0;border-bottom:1px solid #ddd1c8;font-size:14px;display:flex;justify-content:space-between;gap:10px}.checkout-item small{display:block;color:#806c5e;margin-top:5px}.checkout-error{color:#a12828;font-size:13px;line-height:1.5}.checkout-confirm{margin:40px auto;max-width:630px;text-align:center;background:#f5f0eb;padding:45px 30px}.checkout-confirm[hidden],.checkout-grid[hidden]{display:none}.checkout-confirm h2{font-weight:normal;font-size:32px}.checkout-check{font-size:40px;color:#55745b}.checkout-finish{max-width:280px}@media(max-width:800px){.checkout-grid{grid-template-columns:1fr;gap:22px}.checkout-panel{padding:24px}}
+/* Inline checkout validation */
+.field-warning{display:block;color:#a13e35;font-size:12px;line-height:1.45;margin-top:2px}
+.checkout-fields input.input-invalid{border-color:#b95349;background:#fff8f6;outline-color:#b95349}
+.checkout-fields input:focus{outline:2px solid #9a7969;outline-offset:1px}
+/* Editorial confirmation: existing content, refined presentation */
+.checkout-confirm{position:relative;overflow:hidden;max-width:700px;margin:30px auto 60px;padding:65px 50px 55px;background:linear-gradient(145deg,#faf7f3,#efe5dc);border:1px solid #e5d8cc;box-shadow:0 22px 65px rgba(62,40,33,.09)}
+.checkout-confirm::before,.checkout-confirm::after{content:'';position:absolute;width:210px;height:210px;border:1px solid rgba(136,106,87,.14);border-radius:50%;pointer-events:none}
+.checkout-confirm::before{top:-130px;left:-110px}.checkout-confirm::after{right:-130px;bottom:-120px}
+.confirmation-eyebrow{font-size:12px;letter-spacing:4px;color:#745c4c;margin-bottom:27px}
+.checkout-check{width:76px;height:76px;line-height:70px;margin:0 auto 22px;border:1px solid #9fb09b;border-radius:50%;background:#e6ede4;color:#4f7459;font-size:36px;font-family:Arial,sans-serif}
+.confirmation-kicker{font-size:11px;letter-spacing:2.5px;color:#6c785f;margin-bottom:14px}
+.checkout-confirm h2{font-size:clamp(32px,4vw,46px);margin:0 0 18px;color:#3e2821;line-height:1.12}
+.checkout-confirm>p{max-width:460px;margin:0 auto 28px;color:#766256;font-size:14px;line-height:1.85}
+.confirmation-receipt{margin:30px auto 18px;max-width:470px;background:rgba(255,255,255,.75);border:1px solid #e5d8cc;padding:25px 28px}
+.receipt-label{font-size:10px;letter-spacing:2px;color:#8c7465}.receipt-reference{font-size:clamp(21px,3vw,29px);letter-spacing:1.5px;color:#3e2821;margin:10px 0 20px;font-weight:600;overflow-wrap:anywhere}
+.receipt-divider{border-top:1px dashed #d5c6b9;margin-bottom:18px}
+.confirmation-receipt p{color:#685347;font-size:13px;line-height:1.8;margin:0}
+.checkout-confirm .confirmation-note{font-size:12px;color:#907c70;margin:16px auto 25px}
+.checkout-finish{max-width:280px;margin-top:4px}
+@media(max-width:600px){.checkout-confirm{padding:44px 19px 35px}.confirmation-receipt{padding:23px 14px}}
